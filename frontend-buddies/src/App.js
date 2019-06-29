@@ -36,18 +36,13 @@ class App extends Component {
     })
     // console.log(this.state.beerList[this.state.beerList.length-1])
   }
-
-  // setLastBeer = (query) => {
-  //   this.setState({
-  //     lastBeer: query
-  //   })
-  // }
-
-
   render() {
+    const pageCenter = {
+      textAlign: 'center'
+    }
     return (
-      <div className="App">
-        <h1>Drinking Buddies!</h1>
+      <div class="container" style={pageCenter}>
+        <h1>Drinking Buddy!</h1>
         <BeerSearchForm findBeer={this.findBeer}/>
         <BeerDisplay fullBeerList={this.state.lastBeer}/>
 
